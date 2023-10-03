@@ -1,0 +1,688 @@
+body {
+
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+}
+
+header .seccion1 {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+}
+
+header .seccion1 .seccion_interna1 {
+    display: flex;
+    width: 80%;
+}
+
+header .seccion1 .seccion_interna1 a {
+    font-family: 'Lilita One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: #6504B5;
+    margin-right: 100px;
+}
+
+header .seccion1 .seccion_interna1 p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: #6504B5;
+    margin: 0;
+}
+
+
+header .seccion1 .seccion_interna2 {
+    padding-right: 25px;
+}
+
+header .seccion1 .seccion_interna2 a i {
+    font-size: 30px;
+}
+
+header .seccion1 .seccion_interna2 a i:hover {
+    color: red;
+}
+
+header .seccion2 {
+    width: 10%;
+    border-left: 1px solid;
+    padding-left: 20px;
+}
+
+header .seccion2 .formulario-header .contenido-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .seccion2 .formulario-header .contenido-form a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+header .seccion2 .formulario-header .contenido-form a:hover {
+    color: #6504B5;
+}
+
+/*--------main----------*/
+main .seccion1 {
+    margin: auto;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #6504B5;
+    display: flex;
+    align-items: center;
+}
+
+main ul {
+    width: 60%;
+    margin: auto;
+}
+
+
+main ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #3c0469;
+    width: auto;
+    border-radius: 15px;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+    padding: 0px;
+}
+
+.menu-vertical li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.menu-vertical li a:hover {
+    text-decoration: underline;
+}
+
+main .hero {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #6504B5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/andrew-s-ouo1hbizWwo-unsplash\ \(2\).jpg);
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+main .hero .cuadro-busqueda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .cuadro-busqueda form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .cuadro-busqueda form .input-busqueda {
+    color: #4d4751;
+    font-family: Nexa Regular, arial, helvetica, sans-serif;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 400px;
+    border: none;
+}
+
+.hero .cuadro-busqueda form .input-boton {
+    background-color: #6504B5;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    width: 120px;
+    border: none;
+    margin-top: 10px;
+}
+
+.hero .cuadro-busqueda form .input-boton:hover {
+    background-color: #3c0469;
+    cursor: pointer;
+}
+
+.hero .texto h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+}
+
+main .contenedor-cajas {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .contenedor-cajas .caja {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #f6f6f6;
+}
+
+main .contenedor-cajas .caja:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #6504B5;
+}
+
+main .contenedor-cajas .caja .icono {
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+main .contenedor-cajas .caja .icono i {
+    font-size: 60px;
+    color: #6504B5;
+}
+
+main .mascotas-disponibles-titulo {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+main .mascotas-disponibles-titulo h2 {
+    text-align: center;
+    color: #500cbd;
+    font-size: 35px;
+    font-family: 'Lilita One', cursive;
+}
+
+main .mascotas-disponibles {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: 1fr;
+    grid-template-areas: "uno dos tres cuatro ";
+    grid-gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+
+main .mascotas-disponibles div:nth-child(1) {
+    grid-area: dos;
+}
+
+
+main .mascotas-disponibles .mascota {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+main .mascotas-disponibles .mascota .nombre a {
+    text-decoration: none;
+}
+
+
+main .mascotas-disponibles .mascota:hover {
+    border: 2px solid #6504B5;
+    cursor: pointer;
+}
+
+main .mascotas-disponibles .mascota .nombre {
+    text-align: center;
+    background-color: #fff;
+}
+
+main .mascotas-disponibles .mascota .foto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .pensando-adoptar {
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+main .pensando-adoptar .titulo {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+main .pensando-adoptar .titulo h2 {
+    text-align: center;
+    font-size: 38px;
+}
+
+main .pensando-adoptar .adoptantes-anuncios {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 40px 0px 40px 0px;
+}
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio i {
+    font-size: 50px;
+    color: #6504B5;
+}
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio h2 {
+    font-size: 22px;
+    color: #6504b5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+}
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio p {
+    color: #4d4751;
+    font-size: 20px;
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio a {
+    text-decoration: none;
+    color: #6504B5;
+    font-size: 18px;
+    border: 1px solid #6504B5;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+
+main .pensando-adoptar .adoptantes-anuncios .caja-anuncio a:hover {
+    background-color: #6504B5;
+    color: #fff;
+}
+
+main .mascotas-ingresadas-recientemente {
+    margin-bottom: 100px;
+}
+
+main .mascotas-ingresadas-recientemente .titulo {
+    margin-bottom: 100px;
+}
+
+main .mascotas-ingresadas-recientemente .titulo h2 {
+    text-align: center;
+    color: #500cbd;
+    font-size: 35px;
+}
+
+main .contenedor-general {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+main .contenedor-general .caja {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    opacity: 80%;
+}
+
+main .contenedor-general .caja:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+main .contenedor-general .caja .foto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .contenedor-general .caja .texto {
+    background-color: #fff;
+    text-align: center;
+}
+
+main .contenedor-general .caja .texto a {
+    text-decoration: none;
+    color: #000;
+}
+
+main .mascotas-ingresadas-recientemente {
+    margin-top: 200px;
+}
+
+main .contenedor-aritculos {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "uno uno dos dos"
+        "uno uno dos dos";
+    margin-bottom: 200px;
+}
+
+
+
+main .articulos .contenedor-aritculos .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+main .articulos .contenedor-aritculos .uno {
+    grid-area: uno;
+}
+
+main .articulos .contenedor-aritculos .dos {
+    grid-area: dos;
+}
+
+
+main .articulos .contenedor-aritculos .articulo .texto p:nth-child(1) {
+    font-size: 20px;
+}
+
+main .articulos .contenedor-aritculos .articulo .texto p:nth-child(2) {
+    font-size: 16px;
+}
+
+
+main .articulos .contenedor-aritculos .articulo .imagen {
+    height: 60%;
+    width: 100%;
+}
+
+main .articulos .contenedor-aritculos .articulo .texto {
+    height: 40%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main .articulos .contenedor-aritculos .articulo .imagen img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .articulos .contenedor-aritculos .articulo .texto a {
+    text-decoration: none;
+    color: #6504B5;
+    font-size: 18px;
+    padding: 8px 0px 8px 0px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #aaa7a7;
+    margin: 0px;
+}
+
+main .articulos .contenedor-aritculos .articulo:hover a {
+    background-color: #6504b5;
+    color: #fff;
+}
+
+main .articulos .contenedor-aritculos .articulo:hover {
+    cursor: pointer;
+    border: 2px solid #6504B5;
+}
+
+main .ubicacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    padding-bottom: 60px;
+}
+
+main .ubicacion .texto {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: #6504B5;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+main .ubicacion .mapa {
+    margin: auto;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-seccion1 {
+    background-color: red;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-seccion1 .imagen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-seccion1 .imagen img {
+    max-height: 50%;
+    text-align: center;
+}
+
+footer .footer-seccion1 .texto p {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .seccion2 .parte1 {
+    background-color: #6504B5;
+    padding: 20px 0px 20px 0px;
+}
+
+footer .seccion2 .parte1 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+footer .seccion2 .parte1 ul li {
+    list-style: none;
+}
+
+footer .seccion2 .parte1 ul li i {
+    color: #fff;
+    font-size: 30px;
+}
+
+footer .seccion2 .parte1 ul li i:hover {
+    cursor: pointer;
+}
+
+footer .seccion2 .parte1 ul li:nth-child(1):hover i {
+    color: #4267B2;
+}
+
+footer .seccion2 .parte1 ul li:nth-child(2):hover i {
+    color: #C13584;
+}
+
+footer .seccion2 .parte1 ul li:nth-child(3):hover i {
+    color: #1DA1F2;
+}
+
+footer .seccion2 .parte1 ul li:nth-child(4):hover i {
+    color: #FF0000;
+}
+
+
+footer .seccion2 .parte2 {
+    background-color: #2E0152;
+    padding: 20px 0px 20px 0px;
+}
+
+footer .seccion2 .parte2 p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/*MEDIA QUERYS  MOVIL*/
+
+@media only screen and (max-width: 768px) {
+    
+
+
+    header {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+
+    main .seccion1{
+        height: auto;
+    }
+
+    main .seccion1 ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    header .seccion_interna1 p {
+        display: none;
+    }
+
+    header .seccion1 .seccion_interna1 a {
+        font-size: 16px;
+    }
+
+    header .seccion2 {
+        width: 40%;
+        padding: 0;
+    }
+
+    .menu-horizontal {
+        flex-direction: column;
+    }
+
+    .hero .cuadro-busqueda form .input-busqueda {
+        width: 300px;
+    }
+
+    .hero .texto h2 {
+        font-size: 35px;
+
+    }
+
+    main .hero {
+        height: 300px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/perro\ y\ gato\ pequeña.jpg);
+    }
+
+    main .contenedor-cajas {
+        width: 90%;
+    }
+
+    main .mascotas-disponibles {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 2fr;
+        grid-template-areas: "uno dos "
+                            "tres cuatro "
+        ;
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    main .pensando-adoptar .adoptantes-anuncios{
+        flex-direction: column;
+    }
+
+    main .pensando-adoptar .adoptantes-anuncios .caja-anuncio{
+        margin: 25px 0px 25px 0px;
+    }
+
+    main .contenedor-aritculos {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: repeat(2, 200px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "uno uno "
+                             "dos dos";
+        margin-bottom: 200px;
+    }
+
+
+
+    footer .seccion2 .parte1 ul{
+        flex-direction: column;
+    }
+
+    footer .seccion2 .parte1 ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+
+    footer .seccion2 .parte1 ul li i {
+        font-size: 45px;
+    }
+}
